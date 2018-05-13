@@ -8,6 +8,9 @@ import { SpotifyService } from '../../services/spotify.service';
 })
 export class SearchComponent implements OnInit {
 
+// tslint:disable-next-line:no-inferrable-types
+public stash: string = 'foooo';
+
   constructor(public _spotify: SpotifyService) {
     this._spotify.getArtistas();
    }
